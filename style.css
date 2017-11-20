@@ -1,0 +1,397 @@
+/*
+	Theme Name: Tránsito Yarumal
+	version: 1.0
+	Author: Duban Restrepo
+	Description: Tema de la secretaría de tránsito y transporte de Yarumal.
+*/
+
+/*Fuente importada para el botón de busqueda de la barra superior------------------------------------------------------*/
+
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+body{
+	font-family: 'Barlow Condensed', sans-serif;
+}
+.fondo{
+	background-color: #F6F6F6;
+}
+
+.padre-general{
+	background-color: #fff;
+}
+
+/*Estilos de la barra superior---------------------------------------------------------------------------------------*/
+.barra-superior{
+	padding-top: 0rem;
+	padding-bottom: 0rem;
+	padding-right: 0rem;
+	height: 44px;
+	display: flex;
+	justify-content:space-between;
+	border-radius: 5px;
+	text-align: center;
+	margin-bottom: 5px;
+	
+
+
+
+}
+.barra-superior li{
+	display: block;
+	background-color: #f8f9fa;
+	z-index: 1000;
+
+}
+@media (max-width: 992px){
+	.barra-superior li{
+	border-radius: 3px;
+	border: 1px solid grey;
+
+	}
+}
+.barra-superior li a{
+	
+	height: 30px;
+	padding-top: 3px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
+	border-radius: 3px ;
+	 border: 1px solid #3A67A6;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+}
+@media (max-width: 992px){
+	.barra-superior li a{
+	border: none;
+	margin-left: 0px;
+	
+	}
+}
+.collapse{
+	z-index: 1000;
+}
+#navbarSupportedContent{
+	z-index: 1000 !important;
+}
+
+.barra-superior li a:hover{
+	 border-radius: 3px ;
+	 border: 1px solid #000;
+}
+.goog-te-combo {
+     background: transparent;
+     border: none;
+     font-size: 14px;
+
+  }
+ #google_language_translator{
+ 	
+ 	padding-top:20px ;
+ 	margin-bottom: 10px;
+ 	background:transparent;
+ }
+.skiptranslate div select{
+ background:;
+     font-size: 14px;
+
+
+
+
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+}
+#glt_widget-2{
+	background: transparent;
+	margin-bottom: 10px;
+}
+
+@media (max-width: 992px){
+	#glt_widget-2{
+		background-color: #f8f9fa; 
+		padding-left: 30%;
+
+
+
+	}
+}
+
+
+
+/*Botón de busqueda--------------------------------------------------------------------------------------------------*/
+#search-3{
+	list-style: none;
+}
+
+/*Hasta aquí los estilos de la barra superior----------------------------------------------------------------------------*/
+
+/*Estilos del encabezado-------------------------------------------------------------------------------------------------*/
+
+.cabeza{
+	background-color: #fff; 
+}
+
+
+
+.titulo{
+display: block;
+max-width: 400px;
+font-size: 2rem;
+margin-top: 35px;
+font-family: 'Oswald', sans-serif;
+padding-left: 0px;
+
+
+}
+@media (min-width: 1200px) {
+	.titulo{
+		max-width: 400px;
+	}
+	
+}
+
+
+.logo{
+	
+	
+	width: 140px;
+	height: 140px;
+
+	
+}
+
+
+
+
+
+
+
+
+/*Estilos menú header--------------------------------------------------------------------------------------------*/
+.barra-menu{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	z-index: 1000;
+}
+.navbar{
+	background-color: #3A67A6;
+	padding-top: 0rem;
+	padding-bottom: 0rem;
+	padding-right: 0rem;
+	height: 44px;
+	display: inline-block;
+	border-radius: 5px;
+	text-align: center;
+	margin-bottom: 5px;
+
+
+}
+.navbar-collapse{
+	justify-content: center;
+}
+.navbar li{
+	display: block;
+	height: 44px;
+	background-color: #3A67A6;
+	
+
+
+
+}
+.navbar li a{
+	display: block;
+	height: 44px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 15px;
+	color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+.navbar li a:hover{
+	background-color: #5291D9;
+	 border-bottom: 2px solid #FBF339;
+}
+
+/*Estilos del submenú---------------------------------------------------------------------------------------------*/
+
+.navbar li ul{
+	background-color: #5291D9;
+	padding-top: 5px;
+
+
+}
+.navbar li ul li{
+	height: 30px;
+	background-color: #5291D9
+
+}
+.navbar li ul li a{
+	height: 30px;
+	padding-top: 3px;
+	
+}
+.navbar li ul li a:hover{
+	height: 30px;
+	background-color: #3A67A6;
+	border: 0;
+	border-top: 1px solid #FBF339;
+}
+.active a{
+	background-color: #214C92;
+	
+}
+
+/*Hasta aquí los Estilos del encabezado----------------------------------------------------------------------------*/
+
+
+/*Contenedor de las secciones de las estradas de la página de inicio------------------------------------------------*/
+
+.contenedor{
+	background-color: #fff;
+	width: 100%;
+}
+
+/*Sidebar de las páginas-------------------------------------------------------------------------------------------*/
+
+.side{
+	background-color: #3A67A6;
+	height: 400px;
+}
+/*Este media query se usa para centrar la imagen destacada en la pagina de inicio cuando esté en moviles------------*/
+@media (max-width: 768px) {
+  .imagen-destacada  {
+    text-align: center;
+  }
+}	
+
+
+.side-right{
+	background-color: #f4f4f4;
+}
+.side-element{
+	background-color: #fff;
+	padding: 5px;
+	text-align: justify;
+	margin-bottom: 5px;
+	margin-top: 5px;
+
+}
+.element-a div div{
+	text-decoration: none;
+
+}
+.element-a div:hover{
+	background-color: #DFD6D6;
+}
+.element-a p{
+	text-decoration: none;
+	color: #000;
+	}
+.element-a p:hover{
+	text-decoration: none;
+}	
+@media (max-width: 768px) {
+  .side-right {
+    display: none;
+  }
+}
+.tarjeta{
+-webkit-box-shadow: 3px 3px 34px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 34px -5px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 34px -5px rgba(0,0,0,0.75);
+}
+.tarjeta:hover{
+	background-color: #F4F4F4;
+
+	-webkit-box-shadow: 11px 10px 5px -200px rgba(0,0,0,0.75);
+-moz-box-shadow: 11px 10px 5px -200px rgba(0,0,0,0.75);
+box-shadow: 11px 10px 5px -200px rgba(0,0,0,0.75);
+transition: .2s;
+}
+.tarjeta a{
+	color: #201F1F;
+	transition: .2s;
+}
+.tarjeta a:hover{
+	color: #3A67A6;
+	transition: .2s;
+}
+.barra-paginacion{
+	;
+}
+.page-numbers{
+	margin-right: 5px;
+	margin-left: 5px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding-left: 15px;
+	text-decoration: none;
+	font-size: 14pt;
+	background-color: #F4F4F4;
+	border-radius: 5px;
+	
+}
+.page-numbers:hover{
+		background-color: #3A67A6;
+		height: 44px;
+		border-radius: 5px;
+		color: white;
+}
+.current{
+	background-color: #5291D9;
+	height: 44px;
+	border-radius: 5px;
+
+}
+
+/*Estilos del footer-----------------------------------------------------------------------------*/
+
+.cont-footer{
+	background-color: #777575;
+}
+.menu-footer{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	
+}
+
+.menu-footer li img{
+
+	width: 98%;
+
+}
+#e-a{
+	width: 60%;
+}
+#v-a{
+	padding-top: 18%;
+	font-weight: bold;
+}	
+@media (max-width: 768px){
+	#v-a {
+		font-size: 2rem;
+		font-weight: bold;
+	}
+}	
+
+}
+#min-t{
+	padding-top: 1%;
+}
+.dest-img img{
+	max-width: 100%;
+}
+.widget_glt_widget{
+	list-style: none;
+}
+.texto-entrada img{
+	max-width: 100%;
+}
